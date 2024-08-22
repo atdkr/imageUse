@@ -1,0 +1,1799 @@
+/*這是改中*/
+
+/*////////////////整體//////////////*/
+._lc_#layout_content {
+    min-height: 100vh;
+}
+
+body {
+    font-size: 12pt;
+
+}
+
+/*整個河道的背景圖片更換*/
+._lch_ {
+    /*勿動*/
+    background: center / cover fixed;
+    background-image: url(https://i.imgur.com/XbCWGjC.png);
+}
+
+/*///////////////隱藏////////////////*/
+/*一行隱藏*/
+#plurk_ads {
+    max-height: 0px !important;
+    max-width: 0px !important;
+}
+
+.snowflake,
+/*雪花*/
+#plurk_ads,
+div.adsense,
+#cbox_ads,
+#sliderAds,
+div#resp_banner_ads,
+div#resp_banner_ads.show,
+section.adsense,
+.sliderAds,
+section.adsense h3
+
+/*廣告*/
+    {
+    display: none !important;
+    transform: scale(0);
+}
+
+#plurk_ads a {
+    overflow: hidden;
+    _overflow: none;
+}
+
+._lc_ #languge_selector {
+    height: 0px;
+    overflow: hidden;
+    display: none !important;
+}
+
+/* 隱藏朋友＆粉絲圖片
+  ._lc_ #dash-friends-pics, ._lc_ #dash-fans-pics, #dash-profile .profile-info .edit-alias {height:0px; overflow:hidden; display : none !important; }
+  .dash-segment-friends .segment-content {padding:0;}*/
+/*噗內容***/
+/* 時間軸時間數字區隱藏*/
+/*隱藏時間區*/
+.div_bottom {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    zoom: 1;
+}
+
+/*噗的時間顯示*/
+.timeline-timeshow {
+    opacity: 0;
+}
+
+/*下面那條白線*/
+#bottom_line {
+    background: none;
+}
+
+/*隱藏噗幣*/
+.profile-icons .premium #premium-icon {
+    font-size: 0px;
+    opacity: 0;
+}
+
+/*隱藏地點*/
+#location {
+    opacity: 0;
+}
+
+/*隱藏關係*/
+p#relationship_container {
+    opacity: 0;
+}
+
+/*隱藏出生，認證*/
+._lc_ #span_years,
+._lc_ #m_or_f {
+    font-size: 0px;
+    opacity: 0;
+}
+
+/*隱藏送禮按鈕*/
+.friend_man.send_gift {
+    opacity: 0;
+}
+
+/*隱藏私噗按鈕
+  .friend_man.private_plurk {opacity: 0; }*/
+
+#plurk-dashboard #dash-additional-info #private_plurk {}
+
+
+
+
+/*隱藏噗上的小icon置頂、愛心、噗幣、轉噗*/
+.plurk_icon:not(.bday),
+.pinned_plurk_icon {
+    display: none;
+}
+
+.plurk_icon:not(.bday) {
+    display: none;
+}
+
+.plurk_icon img {
+    display: none;
+}
+
+.plurk_icon.coin::before {
+    display: none;
+}
+
+.plurk_icon.coin img {
+    display: none;
+}
+
+.plurk.porn .porn-icon {
+    display: none;
+}
+
+.plurk.porn .porn-icon::before {
+    display: none;
+}
+
+.plurk_icon.coin {
+    display: none;
+}
+
+:is(url({)),
+.response-manager .coin,
+:is(url(})) {
+    display: none;
+}
+
+/*紛絲區整體*/
+.dash-segment-fans .segment-content {
+    display: none;
+}
+
+/*好友按鈕*/
+#dash-friends .friend_man {
+    display: none;
+}
+
+/*好友連結*/
+#dash-friends .show_all_friends a,
+#dash-friends .show_mutual_friends a {
+    display: none;
+}
+
+/*好友頭像區*/
+#dash-friends .friend_holder {
+    display: none;
+}
+
+/*粉絲按鈕*/
+#dash-fans .friend_man {
+    display: none;
+}
+
+/*粉絲連結*/
+#dash-fans .show_all_friends a {
+    display: none;
+}
+
+/*粉絲頭像區*/
+#dash-fans .friend_holder {
+    display: none;
+}
+
+/*徽章區*/
+#plurk-dashboard .dash-segment-award {
+    display: none;
+}
+
+/*/////////////////////////////////////////*/
+/*/////////////////////////////////////////*/
+/**** ◆ 噗浪訊息上的icon ◆****/
+/*推文-平常狀態*/
+.manager .promote {
+    filter: alpha(opacity=0) !important;
+    -moz-opacity: 0 !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0px !important;
+    text-indent: -9999px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+/*推文-滑鼠滑過*/
+.manager .promote:hover {
+    filter: alpha(opacity=0) !important;
+    -moz-opacity: 0 !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0px !important;
+    text-indent: -9999px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+/*未轉噗-平常狀態*/
+.manager .replurk-off,
+.manager .replurk-off:hover {
+    filter: alpha(opacity=0) !important;
+    -moz-opacity: 0 !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0px !important;
+    text-indent: -9999px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+/*已轉噗--滑鼠滑過*/
+.manager .replurk-on,
+.manager .replurk-on:hover {
+    filter: alpha(opacity=0) !important;
+    -moz-opacity: 0 !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0px !important;
+    text-indent: -9999px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+/*未喜歡-平常狀態*/
+.manager .like-off {
+    color: #82ae46 !important;
+}
+
+/*未喜歡-滑鼠滑過*/
+.manager .like-off:hover {
+    background: #FFF !important;
+}
+
+/*已喜歡-平常狀態*/
+.manager .like-on {
+    color: #942343 !important;
+}
+
+/*已喜歡-滑鼠滑過*/
+.manager .like-on:hover {
+    background: #FFF !important;
+}
+
+/*未消音-平常狀態*/
+.manager .mute-off {
+    color: #82ae46 !important;
+}
+
+/*未消音-滑鼠滑過*/
+.manager .mute-off:hover {
+    background: #FFF !important;
+}
+
+/*已消音-平常狀態*/
+.manager .mute-on {
+    color: #8B968D !important;
+}
+
+/*已消音-滑鼠滑過*/
+.manager .mute-on:hover {
+    background: #FFF !important;
+}
+
+
+/*送噗幣-*/
+.manager .pif-bone,
+.manager .pif-bone:hover {
+    filter: alpha(opacity=0) !important;
+    -moz-opacity: 0 !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0px !important;
+    text-indent: -9999px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+/*/////////////////////////////////////////*/
+#dash-segment dash-segment-profile:hover {
+    position: fixed !important;
+    z-index: 3000;
+    float: none;
+    bottom: 50px;
+    left: calc(-1 * var(--自介寬度) + 50px);
+    width: var(--自介寬度) !important;
+    /*圓角大小*/
+    border-radius: 5px;
+    /*四周留空間大小*/
+    padding: 20px;
+    /*背景色*/
+    background: #FF0;
+    /*動畫*/
+    transition: left .6s
+}
+
+#dash-segment dash-segment-profile:hover {
+    left: 30;
+}
+
+/* 頭貼名片*/
+#plurk-dashboard .dash-segment-profile #dash-profile {
+    height: 90px;
+    margin-left: 70px;
+}
+
+#plurk-dashboard .dash-segment-profile #dash-profile img.profile-pic {
+    border: 0;
+    width: 90px;
+    height: 90px;
+    background: url('https://i.imgur.com/5aJ9nk3.png') no-repeat center;
+    padding-top: 90px;
+    background-size: 90px;
+}
+
+#plurk-dashboard .dash-segment-profile #dash-profile img.profile-pic:hover {
+    /* -webkit-filter: invert(1) brightness(0.5); */
+    border: 0;
+    width: 90px;
+    height: 90px;
+    background: url('https://i.imgur.com/w9WJdCj.png') no-repeat center;
+    padding-top: 90px;
+    background-size: 90px;
+}
+
+/*隱藏噗浪帳號*/
+#plurk-dashboard .dash-segment-profile #dash-profile #full_name {
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+._lc_ .dash-segment-profile :first-child.segment-content {
+    height: auto !important;
+    width: 190px !important;
+    position: fixed !important;
+    top: 70px !important;
+    left: -170px !important;
+    /*圓角大小*/
+    border-radius: 7px;
+    /*四周留空間大小*/
+    padding: 20px;
+    /*背景色*/
+    background: #369 !important;
+    /*動畫*/
+    transition: left .6s;
+    z-index: 3000;
+}
+
+._lc_ .dash-segment-profile :first-child.segment-content:hover {
+    left: 0px !important;
+}
+
+
+/*/////////////////////////////////////////*/
+/*消音隱藏*/
+._lc_ .timeline-cnt .plurk.muted {
+    opacity: 0;
+}
+
+._lc_ .timeline-cnt .plurk.muted:hover {
+    opacity: 0;
+}
+
+/* 非愛心／轉噗／書籤的消音偷偷說不顯示於河道 */
+.block_cnt>.plurk.muted[data-uid="99999"]:not(.favorite):not(.replurk):not(.mark) {
+    display: none;
+}
+
+/*轉噗隱藏*/
+._lc_:not(:has(#plurk-dashboard.own)) .timeline-cnt .plurk:has(.q_replurks) {
+    display: none;
+}
+
+/*////////////暫時的//////////////*/
+/*全部的噗隱藏
+  ._lc_ .timeline-cnt .plurk {opacity:0 ;}
+  ._lc_ .timeline-cnt .plurk:hover {opacity:0;}*/
+
+/*/////////////////////////////////////////*/
+/* top_bar背景及文字顏色 */
+'{:is(' {
+
+    '),
+ body,
+    : is(url(})) {
+        /* top_bar文字顏色 */
+        --top-bar-text-color: rgba(255, 255, 255, 1);
+        /* top_bar背景色 */
+        --top-bar-bg-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+        /* top_bar背景模糊程度 */
+        --top-bar-blur-px: 0px;
+        /* top_bar背景飽和度 */
+        --top-bar-blur-saturate: 100%;
+    }
+
+    '{:is(' {
+
+        '),
+ #top_bar,
+        : is(url(})) {
+            color: var(--top-bar-text-color);
+            background: var(--top-bar-bg-color);
+            backdrop-filter: saturate(var(--top-bar-blur-saturate)) blur(var(--top-bar-blur-px));
+            -webkit-backdrop-filter: saturate(var(--top-bar-blur-saturate)) blur(var(--top-bar-blur-px));
+        }
+
+        '{:is(' {
+
+            '),
+ .bar-color,
+            : is(url(})) {
+                background: none;
+            }
+
+            '{:is(' {
+
+                '),
+ #top_bar #top-bar-main .tab.current: after,
+                    :is(url(})) {
+                    background: rgba(208, 208, 200, 0.7);
+                    left: calc(50% - 1.5px);
+                    top: 32px;
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 5px;
+                }
+
+                /*/////////////////////////////////////////*/
+
+
+
+                /*/////////////////////////////////////////*/
+
+                /*設定區-變數*/
+                #dashboard_holder {
+                    --資訊與按鈕區寬度: 300px;
+                    --自介寬度: 400px;
+                }
+
+                #about_me {
+                    position: fixed !important;
+                    z-index: 3000;
+                    float: none;
+                    top: 350px;
+                    color: #FFF;
+                    left: calc(-1 * var(--自介寬度) + 20px);
+                    width: var(--自介寬度) !important;
+                    /*圓角大小*/
+                    border-radius: 7px;
+                    /*四周留空間大小*/
+                    padding: 20px;
+                    /*背景色*/
+                    background: #369;
+                    /*動畫*/
+                    transition: left .6s
+                }
+
+                #about_me:hover {
+                    left: 0;
+                }
+
+                .dash-group-left {
+                    position: fixed !important;
+                    z-index: 3000;
+                    float: none;
+                    top: 350px;
+                    color: #FFF;
+                    right: calc(-1 * var(--自介寬度) + 20px);
+                    width: var(--自介寬度) !important;
+                    /*圓角大小*/
+                    border-radius: 7px;
+                    /*四周留空間大小*/
+                    padding: 20px;
+                    /*背景色*/
+                    background: #369;
+                    /*動畫*/
+                    transition: right .6s
+                }
+
+                .dash-group-left:hover {
+                    right: 0;
+                }
+
+                /*/////////////////////////////////////////*/
+
+
+                /*/////////////////////////////////////////*/
+
+                /*噗串點開固定位置*/
+                .timeline-cnt .plurk_box {
+                    /*這裡勿動*/
+                    position: fixed;
+                    margin-top: 0 !important;
+                    /*上下位置*/
+                    top: 62px !important;
+                    /*左右位置*/
+                    left: 10px !important;
+                    /*left可改right*/
+                    /*左右位置（置中）*/
+                    left: calc((100vw - 503px) / 2) !important;
+                    /*左右位置兩種擇一，不使用的要刪除*/
+                }
+
+                #form_holder {
+                    position: fixed;
+                }
+
+                /*固定點開的噗首高度，超過高度的內容顯示捲軸*/
+                .timeline-cnt .plurk_box .text_holder {
+                    /*這裡勿動*/
+                    padding: 0;
+                    overflow: auto !important;
+                    /*高度*/
+                    height: 180px !important;
+                }
+
+                /*噗串內容位置*/
+                #form_holder {
+                    /*上下位置*/
+                    top: 250px !important;
+                }
+
+                /*/////////////////////////////////////////*/
+                /* ==== 輸入區icon按鈕 - 重設開始 ==== */
+                /* 重設按紐icon區 */
+                .icons_holder,
+                ._lch_~.pop-window .icons_holder {
+                    display: flex;
+                    align-items: center;
+                }
+
+                /* 多餘的after清除 */
+                .icons_holder:after,
+                ._lch_~.pop-window .icons_holder:after {
+                    all: unset;
+                }
+
+                /* 重設按鈕icon */
+                .icons_holder li,
+                ._lch_~.pop-window .icons_holder li {
+                    all: unset;
+                }
+
+                .plurkForm.mini-mode .icons_holder li,
+                ._lch_~.pop-window .mini_form .icons_holder li,
+                .icons_holder li,
+                ._lch_~.pop-window .icons_holder li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 1.24em;
+                    height: 1.24em;
+                    cursor: pointer;
+                    font-size: unset;
+                    height: 1.46em;
+                }
+
+                .icons_holder li:hover,
+                ._lch_~.pop-window .icons_holder li:hover {
+                    color: var(--hover_color, unset);
+                }
+
+                /* 處理投票按鈕icon不一致問題 */
+                .icons_holder .pif-poll:before,
+                ._lch_~.pop-window .icons_holder .pif-poll:before {
+                    font-size: 1.15em;
+                    position: relative;
+                    left: 2px;
+                    top: 2px;
+                }
+
+                /* 移除表符按紐icon的第二色 */
+                .icons_holder .pif-emoticon:after,
+                ._lch_~.pop-window .icons_holder .pif-emoticon:after {
+                    all: unset;
+                }
+
+                /* ==== 輸入區icon按鈕 - 重設結束 ==== */
+                /* ==== 輸入區icon按鈕 - 設定開始 ==== */
+                /* 按鈕區 */
+                .icons_holder,
+                ._lch_~.pop-window .icons_holder {
+                    /* 按鈕顏色 */
+                    color: #faa;
+                    /* 按鈕間隔 */
+                    gap: 6px;
+                    /* 按鈕大小 */
+                    font-size: 26px;
+                }
+
+                .icons_holder li:hover,
+                ._lch_~.pop-window .icons_holder li:hover {
+                    /* 按鈕指上時的顏色 */
+                    color: #afa;
+                }
+
+                /* 按鈕區 - 小 */
+                .plurkForm.mini-mode .icons_holder,
+                ._lch_~.pop-window .mini_form .icons_holder {
+                    /* 按鈕間隔 */
+                    gap: 4px;
+                    /* 按鈕大小 */
+                    font-size: 16px;
+                }
+
+                /* ==== 輸入區icon按鈕 - 設定結束 ==== */
+
+                /*/////////把輸入區加大////////////*/
+                ._lc_ div.input_holder,
+                ._lc_ #input_big {
+                    min-height: 189px !important;
+
+                    background: none !important;
+                    border: 0 !important;
+                }
+
+                ._lc_ #input_big.content {
+                    color: #000 !important;
+                }
+
+                ._lc_ textarea#input_big_private,
+                ._lc_ textarea#input_big,
+                ._lc_ textarea #input_big .content,
+                ._lc_ textarea#input_permalink,
+                ._lc_ input#current_query,
+                ._lc_ td.td_cnt textarea,
+                ._lc_ textarea#input_small {
+                    background: rgba(255, 255, 255, 0.33) !important;
+                    border: 0 !important;
+                    min-height: 189px !important;
+                    line-height: 1.6em !important;
+                    color: #000 !important;
+                    font-size: 16px !important;
+                    border-radius: 5px !important;
+                    padding: 4px 2px 3px 4px !important;
+                    box-shadow: 0pt 0px 0pt rgba(0, 0, 0, 0.02), 0pt 0px 0px rgba(0, 0, 0, 0.01) inset;
+                    transition: background 0.6s ease;
+                }
+
+                ._lc_ td.td_cnt textarea,
+                ._lc_ textarea#input_small {
+                    font-size: 12px !important;
+                    min-height: 100px !important;
+                    line-height: 1.6em !important;
+                    letter-spacing: 0.13em !important;
+                    color: #111 !important;
+                    padding: 4px 2px 3px 2px !important;
+                    border: 0 !important;
+                    border-radius: 5px !important;
+                }
+
+                /*///////////把發噗鈕換顏色/////////////*/
+                ._lc_ .submit_img {
+                    background: rgba(219, 219, 219, 0.6) !important;
+                    border-radius: 25px !important;
+                    color: #444 !important;
+                    font-size: 1.4em !important;
+                    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.4) !important;
+                }
+
+                ._lc_ .submit_img:hover {
+                    background: rgba(255, 255, 255, 0.5) !important;
+                }
+
+                ._lc_ .pif-dropdown::before {
+                    transform: scale(0.4);
+                }
+
+                /*把「按enter送出」變成圖案*/
+                .poster_holder .char_updater {
+                    /*把不透明度調回100%*/
+                    opacity: 1;
+                    /*圖片*/
+                    content: url(https://s.plurk.com/emoticons/basic2/38692e95e30abcd59898.gif);
+                }
+
+                /*/////////////////////////////////////////*/
+
+                /*傳送私人訊息_小生物版本
+  .friend_man.private_plurk {
+  z-index:9000;
+  color:#82ae46 !important;
+  background:#dcd3b2;
+  margin-left: 520px;
+  margin-top: 170px;
+  position:absolute;
+  display:block;
+  float:left;
+  background:url(https://i.imgur.com/EIt8XhO.png) left center no-repeat;
+      width:auto;
+      height:auto;
+      font-size:0px;
+  }
+  .friend_man.private_plurk:before {content: "僅接受委託聯絡";margin-left: 12px; z-index:9000; }*/
+
+                /*/////////////////////////////////////////*/
+
+
+                /*/////////////////////////////////////////*/
+
+                /*留言對話框，自己留言靠右+暱稱旁新增圖示+更改時間樣式*/
+                /*把16137113取代成自己的uid*/
+                /*對話框參考：https://www.plurk.com/p/ogg8nj*/
+
+                /*****可改的地方*****/
+                .response_box {
+                    --自己對話框顏色: #9DE693;
+                    --其他人對話框顏色: #FFF;
+                    --留言區背景色: #97B3DB;
+                    --最上方回應數顏色: #FFF;
+                }
+
+                .list .name {
+                    /*暱稱顏色&樣式*/
+                    color: #46556C !important;
+                    text-decoration: none;
+                }
+
+                .timeline-cnt .plurk_box {
+                    width: 445px;
+                    /*點開噗文寬度*/
+                }
+
+                .list .plurk_cnt .text_holder {
+                    max-width: 66%;
+                    /*更改回應最大寬度*/
+                }
+
+                /*時間、回覆跟箭頭的顏色&背景*/
+                .response-manager .edit,
+                .response-manager .time a,
+                .response-manager .mention,
+                .response-manager .option {
+                    background: transparent;
+                    color: #FFF;
+                }
+
+                /*****更改頭貼圖片*****/
+                /*改自己實名噗+偷偷說回應的小圖示，要改圖片在url那邊改就可以了*/
+                .list .response .name::after {
+                    background-image: url('https://emos.plurk.com/555bf956957c034b09aa13b3803dba85_w42_h42.gif');
+                }
+
+                /*改其他人非噗主的小圖示，要改圖片在url那邊改就可以了*/
+                .list .response:not(.highlight_owner) .name::before {
+                    background-image: url('https://emos.plurk.com/362648ae2a2db332998ae307bc9c3813_w48_h48.gif');
+                }
+
+                /*改其他人為噗主的小圖示，要改圖片在url那邊改就可以了*/
+                .list .response.highlight_owner .name::before {
+                    background-image: url('https://emos.plurk.com/9b59dd4cd7ab43d694f4bdb53d257f73_w48_h48.png');
+                }
+
+                /*改偷偷說噗主小圖示*/
+                .list .response.highlight_owner .tr_cnt .name[data-uid='99999']::before {
+                    background-image: url('https://emos.plurk.com/0a4b22f0c7d674c2ff0a035156b2f4eb_w48_h48.png');
+                }
+
+                /*改偷偷說其他人小圖示*/
+                .list .response:not(.highlight_owner) .name[data-uid="99999"]::before {
+                    background-image: url('https://emos.plurk.com/7e4f98d93b2c08d78e01036cf4ce5aff_w48_h48.png');
+                }
+
+                /*隨機其他人非噗主小圖示，uid尾數為9為同一張圖*/
+                .list .response:not(.highlight_owner) .name[data-uid$='9']:not([data-uid="99999"])::before {
+                    background-image: url('https://emos.plurk.com/090c4e3622f3301169ffef72fe980814_w48_h48.gif');
+                }
+
+                /*隨機其他人為噗主小圖示，uid尾數為4為同一張圖*/
+                .list .response.highlight_owner .name[data-uid$='4']:not([data-uid="99999"])::before {
+                    background-image: url('https://emos.plurk.com/3518cacad7b69eb25928955983ff6afa_w48_h48.png');
+                }
+
+                /*改特定帳號非噗主小圖示，uid自行更換*/
+                .list .response:not(.highlight_owner) .tr_cnt .name[data-uid='12345678']::before {
+                    background-image: url('https://emos.plurk.com/889b365fd6f40815c6d1691a453324f8_w48_h48.png');
+                }
+
+                /*改特定帳號噗主小圖示，uid自行更換*/
+                .list .response.highlight_owner .tr_cnt .name[data-uid='12345678']::before {
+                    background-image: url('https://emos.plurk.com/889b365fd6f40815c6d1691a453324f8_w48_h48.png');
+                }
+
+                /********************/
+                .list .response .name:not([data-uid="99999"][style="color:#0a9c17"]):not([data-uid="16137113"])::before,
+                .list .response .name[data-uid="16137113"]::after,
+                .list .response .name[data-uid="99999"][style="color:#0a9c17"]::after {
+                    background-size: 100%;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    content: "";
+                    border-radius: 50%;
+                    /*頭貼圓角*/
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                /*頭貼位置設定*/
+                .list .response .name:not([data-uid="99999"][style="color:#0a9c17"]):not([data-uid="16137113"])::before {
+                    margin: 0px 5px -7px -5px;
+                }
+
+                .list .response .name[data-uid="16137113"]::after,
+                .list .response .name[data-uid="99999"][style="color:#0a9c17"]::after {
+                    margin: 0px -5px -7px 5px;
+                }
+
+                .list .tr_cnt>td {
+                    /*名字換行*/
+                    display: block;
+                }
+
+                .list .tr_cnt:has(.name[data-uid="16137113"]) .td_cnt,
+                /*自己留言靠右，填入自己的uid*/
+                .list .tr_cnt:has(.name[data-uid="99999"][style="color:#0a9c17"]) .td_cnt {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                .list .tr_cnt:has(.name[data-uid="16137113"]) .td_qual,
+                /*自己名字靠右，填入自己的uid*/
+                .list .tr_cnt:has(.name[data-uid="99999"][style="color:#0a9c17"]) .td_qual {
+                    display: flex;
+                    display: flex;
+                    justify-content: flex-end;
+                    width: auto;
+                }
+
+                .list .plurk_cnt .td_cnt {
+                    /*對話框邊距調整*/
+                    padding: 0.5em 15px 0;
+                    /*位置往外調，留出頭貼位置*/
+                }
+
+                .list .plurk_cnt .text_holder {
+                    /*對話框樣式*/
+                    display: inline-block;
+                    padding: 0.5em 1em;
+                    width: auto !important;
+                    border-radius: 16px;
+                    min-width: 0;
+                    background: var(--其他人對話框顏色);
+                }
+
+                .list .tr_cnt:has(.name[data-uid="16137113"]) .text_holder,
+                /*自己對話框顏色，填入自己的uid*/
+                .list .tr_cnt:has(.name[data-uid="99999"][style="color:#0a9c17"]) .text_holder {
+                    background: var(--自己對話框顏色);
+                }
+
+                .response .plurk_cnt {
+                    background-color: transparent;
+                }
+
+                .list .plurk_cnt .text_holder::after {
+                    /*對話框尾巴樣式和位置*/
+                    content: "";
+                    position: absolute;
+                    left: 3px;
+                    top: -2px;
+                    border-style: solid;
+                    border-width: 7px 5px;
+                    border-color: transparent;
+                    border-left-color: var(--其他人對話框顏色);
+                }
+
+                .list .tr_cnt:has(.name[data-uid="16137113"]) .text_holder::after,
+                /*自己對話框尾巴位置，填入自己的uid*/
+                .list .tr_cnt:has(.name[data-uid="99999"][style="color:#0a9c17"]) .text_holder::after {
+                    left: auto;
+                    right: 3px;
+                    border-left-color: transparent;
+                    border-right-color: var(--自己對話框顏色);
+                }
+
+                .qualifier.q_says {
+                    /*隱藏發語詞*/
+                    display: none;
+                }
+
+                .response_box {
+                    background-color: var(--留言區背景色);
+                }
+
+                /*回應背景色*/
+                .response-count.pif-message {
+                    color: var(--最上方回應數顏色);
+                }
+
+                /*最上方回應數顏色*/
+                .response.show-response-manager .plurk_cnt {
+                    /*滑鼠移上背景色*/
+                    background: none;
+                }
+
+                /**********更改時間樣式***********/
+                /*每則留言間的空隙調小*/
+                .response-manager>* {
+                    padding: 2px 6px 0px;
+                }
+
+                .response {
+                    margin: 0;
+                }
+
+                .response .plurk_cnt {
+                    padding: 0;
+                }
+
+                /*顯示時間樣式更改*/
+                .response-manager {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    display: flex;
+                    justify-content: start;
+                    margin: 0 1.5em 0 2em;
+                    /*位置往外調，留出頭貼位置*/
+                    border: 0;
+                    background: transparent;
+                    transform-origin: left;
+                }
+
+                /*顯示投幣樣式更改*/
+                .response-manager .coin {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                }
+
+                /*自己時間靠右，填入自己的uid*/
+                .plurk:has(.name[data-uid="16137113"]) .response-manager,
+                .plurk:has(.name[data-uid="99999"][style="color:#0a9c17"]) .response-manager {
+                    justify-content: end;
+                    transform-origin: right;
+                }
+
+                /*整個回應邊距調整(含名字及留言)*/
+                .response .plurk_cnt {
+                    padding: 0 5px 20px;
+                }
+
+                /*顯示時間時留位置給它*/
+                .response.show-response-manager .plurk_cnt {
+                    padding-bottom: 0px;
+                }
+
+                /*////////////控制台強制透明///////
+  .dash-segment .segment-content {background:none !important}*/
+
+                /*///////統計區塊內容替換成一張圖片///////////*/
+                /* 統計區塊 */
+                .dash-segment-stats .segment-content {
+                    position: relative;
+                    background: #00aabb !important;
+                    border-radius: .4em;
+                    width: 400px;
+                    min-width: 200px;
+                    /*調整對話框位置*/
+                    left: 50px;
+
+                }
+
+                /*使用這個語法不需要額外的隱藏內容*/
+                #dash-stats {
+                    /*填充方式*/
+                    object-fit: scale-down;
+                    /*圖片*/
+                    content: url();
+                    /*https://images.plurk.com/48dHIolXiKIYPN0gEp7Bf.gif*/
+                    /*四周留空間大小*/
+                    padding: 10px;
+                    /*圓角*/
+                    border-radius: 5px;
+
+                }
+
+                .dash-segment-stats .segment-content:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0;
+                    height: 0;
+                    border: 22px solid transparent;
+                    border-top-color: #00aabb;
+                    border-bottom: 0;
+                    border-left: 0;
+                    margin-left: -16px;
+                    margin-bottom: -22px;
+                    z-index: 1111;
+                }
+
+                /*/////////////////////////////////////////*/
+                /*好友區整體內容替換成一張圖片*/
+                .dash-segment-friends .segment-content {
+                    /*邊緣空隙*/
+                    padding: 10px;
+                }
+
+                /*使用這個語法不需要額外的隱藏內容*/
+                #dash-friends {
+                    /*填充方式*/
+                    object-fit: scale-down;
+                    /*圖片*/
+                    content: url(https://images.plurk.com/3vIw9Cl81GXnNG16ZlArlx.gif);
+                    /*寬度*/
+                    width: 100%;
+                    /*高度*/
+                    height: 80px;
+                    /*圓角*/
+                    border-radius: 5px;
+                }
+
+                /*//////////////換成收藏夾/////////////*/
+
+                ._lc_ footer {
+                    position: absolute;
+                    top: 0px;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                }
+
+                ._lc_ #footer {
+                    padding: 0;
+                    display: block;
+                }
+
+                ._lc_ #footer ul {
+                    position: relative;
+                }
+
+                ._lc_ #footer a {
+                    display: none;
+                }
+
+                ._lc_ #footer li {
+                    display: block;
+                    margin: 0;
+                    font-size: 0;
+                    position: fixed;
+                }
+
+                ._lc_ #footer li:nth-last-child(n+2) {
+                    position: fixed;
+                    z-index: 1111;
+                    object-fit: scale-down;
+                }
+
+                ._lc_ #footer li:last-child {
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                }
+
+                ._lc_ #timeline_holder {
+                    height: 600px !important;
+                }
+
+                /* 河道寬度減半的css:*/
+                ._lc_ #footer ul {
+                    width: 100%;
+                    height: 600px;
+                }
+
+                ._lc_ #footer li:last-child {
+                    background: url(製造背景區塊但是不要放圖片);
+                }
+
+                /*設定區-變數*/
+                #footer {
+                    --分離按鈕寬度: 0px;
+                    --按鈕寬度: 48px;
+                    --按鈕與網頁距離: 20px;
+                    --顯示圖片大小: 30vh;
+                }
+
+                ._lc_ #footer li:nth-child(1) {
+                    left: calc(var(--分離按鈕寬度) + var(--按鈕寬度));
+                    bottom: 20px;
+                    content: url(https://emos.plurk.com/d1a47d170b5f23e835275a1e37d860e4_w48_h48.png);
+                }
+
+                ._lc_ #footer li:nth-child(1):hover~li:last-child {
+                    background: url(https://i.imgur.com/5RCm6FY.png);
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                    background-size: 30vh;
+                }
+
+                ._lc_ #footer li:nth-child(2) {
+                    left: calc(var(--按鈕寬度) *2 + var(--分離按鈕寬度));
+                    bottom: 20px;
+                    content: url(https://emos.plurk.com/d1a47d170b5f23e835275a1e37d860e4_w48_h48.png);
+                }
+
+                ._lc_ #footer li:nth-child(2):hover~li:last-child {
+                    background: url(https://i.imgur.com/RplDirB.png);
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                    background-size: 30vh;
+                }
+
+                ._lc_ #footer li:nth-child(3) {
+                    left: calc(var(--按鈕寬度) *3 + var(--分離按鈕寬度));
+                    bottom: 20px;
+                    content: url(https://emos.plurk.com/d1a47d170b5f23e835275a1e37d860e4_w48_h48.png);
+                }
+
+                ._lc_ #footer li:nth-child(3):hover~li:last-child {
+                    background: url(https://i.imgur.com/By3xORZ.jpeg);
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                    background-size: 30vh;
+                }
+
+                ._lc_ #footer li:nth-child(4) {
+                    left: calc(var(--按鈕寬度) *4 + var(--分離按鈕寬度));
+                    bottom: 20px;
+                    content: url(https://emos.plurk.com/d1a47d170b5f23e835275a1e37d860e4_w48_h48.png);
+                }
+
+                ._lc_ #footer li:nth-child(4):hover~li:last-child {
+                    background: url(https://i.imgur.com/9g4e8EK.png);
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                    background-size: 30vh;
+                }
+
+                ._lc_ #footer li:nth-child(5) {
+                    left: calc(var(--按鈕寬度) *5 + var(--分離按鈕寬度));
+                    bottom: 20px;
+                    content: url(https://emos.plurk.com/d1a47d170b5f23e835275a1e37d860e4_w48_h48.png);
+                }
+
+                ._lc_ #footer li:nth-child(5):hover~li:last-child {
+                    background: url(https://i.imgur.com/p0x5o8i.jpeg);
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                    background-size: 30vh;
+                }
+
+
+                /*/////////////////////////////////////////*/
+
+
+
+                /*/////////////////////////////////////////*/
+
+
+                /*/////////////////////////////////////////*/
+
+                /* 待機圖片 */
+
+                #dynamic_logo {
+                    width: 144px;
+                    /* 圖片寬度 */
+                    height: 120px;
+                    /* 圖片高度 */
+                    background: url(https://images.plurk.com/7A4gD5i6fvplui4f0o7Hon.gif) no-repeat;
+                    /* 圖片網址 */
+                    cursor: url(https://images.plurk.com/1lXzW3PzKLVrWmpM7C0iJp.png), auto;
+                    /* 游標圖片，尺寸限制128x128內，超過尺寸不會顯示 */
+                    /* filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.3)); 陰影 */
+                    overflow: hidden;
+                    z-index: 1000;
+                    background-size: contain;
+                    position: fixed;
+                    /* 固定位置在視窗右下 */
+                    bottom: 10px;
+                    right: 10px;
+                }
+
+                /* 滑鼠移上來換圖片 */
+
+                #dynamic_logo::after {
+                    content: "";
+                    background: url(https://images.plurk.com/7qCgNBwLL1St33ePVDcJCF.gif) no-repeat;
+                    /* 圖片網址 */
+                    width: 144px;
+                    /* 圖片寬度 */
+                    height: 120px;
+                    /* 圖片高度 */
+                    display: none;
+                    background-size: contain;
+                }
+
+                #dynamic_logo:hover {
+                    background: url();
+                }
+
+                #dynamic_logo:hover::after {
+                    display: block;
+                }
+
+                /* 滑鼠點擊換圖片 */
+                /* 以下兩個圖片網址需相同 */
+                img#creature {
+                    width: 144px;
+                    /* 圖片寬度 */
+                    height: 120px;
+                    /* 圖片高度 */
+                    display: none;
+                }
+
+                #dynamic_logo:active>img#creature {
+                    display: block;
+                    background: url(https://images.plurk.com/4qgSeu4PhVCSXZqW8rhSau.gif) no-repeat;
+                    /* 圖片網址 */
+                    padding-right: 144px;
+                    /* 需同圖片寬度 */
+                    background-size: contain;
+                }
+
+                img#creature:hover {
+                    display: block;
+                    background: url(https://images.plurk.com/4qgSeu4PhVCSXZqW8rhSau.gif) no-repeat;
+                    /* 圖片網址同上 */
+                    padding-right: 144px;
+                    /* 需同圖片寬度 */
+                    cursor: url(https://images.plurk.com/3SQ6jzFptcsNTfczSSvMol.png), auto;
+                    /* 點擊後游標圖片，尺寸限制128x128內，超過尺寸不會顯示 */
+                    background-size: contain;
+                }
+
+                /*/////////////////////////////////////////*/
+
+                /*噗內容***/
+                /* 時間軸時間數字區隱藏*/
+                /*隱藏時間區*/
+                .div_bottom {
+                    filter: alpha(opacity=0);
+                    opacity: 0;
+                    zoom: 1;
+                }
+
+                /*下面那條白線*/
+                #bottom_line {
+                    background: none;
+                    font-size: 0px;
+                }
+
+                /*新回應的底色 動態*/
+                .plurk_cnt.new6,
+                .plurk_cnt.new5,
+                .plurk_cnt.new4,
+                .plurk_cnt.new3,
+                .plurk_cnt.new2,
+                .plurk_cnt.new1 {
+                    background: #ffffff !important;
+                }
+
+                .plurk_box td .shade_6,
+                td .shade_6 {
+                    background-color: #fff !important;
+                }
+
+                .plurk_box td .shade_5,
+                td .shade_5 {
+                    background-color: #fff !important;
+                }
+
+                .plurk_box td .shade_4,
+                td .shade_4 {
+                    background-color: #fff !important;
+                }
+
+                .plurk_box td .shade_3,
+                td .shade_3 {
+                    background-color: #fff !important;
+                }
+
+                .plurk_box td .shade_2,
+                td .shade_2 {
+                    background-color: #fff !important;
+                }
+
+                .plurk_box td .shade_1,
+                td .shade_1 {
+                    background-color: #fff !important;
+                }
+
+                /*/////////////////////////////////////////*/
+                /*通知疊在上面*/
+                #filter_tab,
+                #updater {
+                    left: 0;
+                    bottom: 100%;
+                }
+
+                /*設定按鈕不收起來*/
+                #filter_tab a,
+                #filter_tab:hover .no_unread {
+                    height: 25px;
+                    margin-top: 6px;
+                }
+
+                /*通知變成跟篩選一樣*/
+                #updater,
+                #updater .item {
+                    height: auto;
+                }
+
+                #updater .item a {
+                    display: block;
+                    margin: 6px 0 0;
+                }
+
+                /*隱藏文字留icon*/
+                #filter_tab a,
+                #updater .item a {
+                    font-size: 0;
+                    padding: 0 6px;
+                    width: 30px;
+                }
+
+                .timeline_control a i,
+                #updater i {
+                    font-size: 13px;
+                    margin: 0;
+                }
+
+                /*數字推出*/
+                #filter_tab li,
+                #updater .item {
+                    position: relative;
+                }
+
+                #filter_tab span,
+                #updater .item span {
+                    position: absolute;
+                    left: 100%;
+                    top: 4.5px;
+                }
+
+                #filter_tab span span,
+                #updater .item span {
+                    line-height: 18px;
+                    padding: 0 4px;
+                    width: 25px;
+                }
+
+                #updater .item span {
+                    top: 3px;
+                }
+
+                /*改符號*/
+                #noti_np i:before {
+                    content: "nP1111111";
+                }
+
+                /*新訊息符號*/
+                #noti_re_view i:before {
+                    content: "nR";
+                }
+
+                /*新回應符號*/
+                #noti_pp i:before {
+                    content: "";
+                }
+
+                /*無論如何都顯示所有通知按紐(檢查樣式用)
+  #updater .item { display:block!important; }*/
+
+
+                /*//////////////////////////////////////*/
+                /*河道左右箭頭隱藏*/
+                .browse_button {
+                    /*底色*/
+                    --cmp_arrow_background: none;
+                    /*Begin字色*/
+                    --cmp_arrow_color: none;
+                }
+
+                .browse_button .cmp_arrow_right,
+                .browse_button .cmp_arrow_left,
+                .cmp_back_to_today:before {
+                    color: var(--cmp_arrow_background);
+                }
+
+                .cmp_back_to_today {
+                    background: var(--cmp_arrow_background);
+                    color: var(--cmp_arrow_color);
+                }
+
+                /*河道左右箭頭大小*/
+                .browse_button .cmp_arrow_right,
+                .browse_button .cmp_arrow_left {
+                    /*箭頭大小*/
+                    font-size: 0px;
+                }
+
+                .cmp_arrow_right~.cmp_back_to_today {
+                    right: 0;
+                    font-size: 0px;
+                }
+
+                ._lc_ .browse_button {
+                    position: fixed !important;
+                    top: auto !important;
+                    bottom: 100px;
+                }
+
+                ._lc_ .browse_button .cmp_back_to_today {
+                    visibility: hidden;
+                    font-size: 0px;
+                    height: 0px;
+                    width: 0px;
+                    margin: 0px;
+                }
+
+                /*/////////////////////////////////////////*/
+
+                #main_poster>.plurkForm {
+                    position: fixed !important;
+                    z-index: 9000;
+                    float: none;
+                    left: 30px;
+                    bottom: 70px;
+                    width: 600px;
+                    height: auto;
+                }
+
+                /*/////////////////////////////////////////
+  
+                /*主控台樣式*/
+                #dashboard_holder {
+                    --頭貼寬度: 150px;
+                    --按鈕寬度: 30px;
+                    --按鈕高度: 30px;
+                    --按鈕間的間隔: 10px;
+                    --頭貼和按鈕間隔: 10px;
+                }
+
+                #plurk-dashboard #full_name,
+                #plurk-dashboard .profile-info,
+                .profile-icons {
+                    /*個人檔案文字不顯示*/
+                    display: none;
+                }
+
+                /*按鈕樣式設定*/
+                #plurk-dashboard #render_private_plurk .private_plurk,
+                #plurk-dashboard #render_friend a,
+                #plurk-dashboard #render_follow a,
+                #plurk-dashboard #render_send_gift .send_gift {
+                    color: transparent !important;
+                    font-size: 0;
+                    width: var(--按鈕寬度);
+                    height: var(--按鈕高度);
+                    margin-top: 5px;
+                    text-align: center;
+                    transform: rotate(45deg);
+                    /* 旋轉45度 */
+                }
+
+                /*友粉圖案*/
+                #plurk-dashboard #render_friend a::before,
+                #plurk-dashboard #render_follow a::before {
+                    color: white;
+                    margin-left: -2px;
+                }
+
+                /*私噗圖案*/
+                #plurk-dashboard #render_private_plurk .private_plurk::after {
+                    content: url("https://svgshare.com/i/s2X.svg");
+                    width: 100%;
+                }
+
+                /*送幣圖案*/
+                #plurk-dashboard .pif-bone {
+                    color: white;
+                    font-size: 14px;
+                    text-align: center;
+                }
+
+                #plurk-dashboard .pif-bone::before {
+                    width: 100%;
+                }
+
+                /*避免按鈕被footer遮到*/
+                #dashboard_holder {
+                    min-height: calc(var(--頭貼寬度) + var(--頭貼和按鈕間隔) + var(--按鈕高度) + 30px);
+                }
+
+                /*/////////////////////////////////////////*/
+
+                /* 〔勿刪〕修正：當兩個噗同時是display狀態，只會顯示前面的噗直播，後面的噗直播會隱藏 */
+                #timeline_cnt .block_cnt>.plurk.display.plurk_box~.plurk.display .td_img::before,
+                #timeline_cnt .block_cnt>.plurk.display.plurk_box~.plurk.display .td_img::after,
+                #timeline_cnt .block_cnt>.plurk.display~.plurk.display.plurk_box .td_img::before,
+                #timeline_cnt .block_cnt>.plurk.display~.plurk.display.plurk_box .td_img::after {
+                    display: none;
+                }
+
+                /****** 直播間基本設定 ******/
+                #timeline_cnt .block_cnt::before,
+                #timeline_cnt .block_cnt>.plurk.display .td_img::before {
+                    position: fixed;
+                    width: auto;
+                    /* 對話框寬度，預設auto */
+                    height: auto;
+                    /* 對話框高度，預設auto */
+                    min-width: 150px;
+                    min-height: 280px;
+                    max-width: 25rem;
+                    padding: 10px;
+                    padding-right: 60px;
+                    /* 預留空白給方邊頭像 */
+                    background-color: #FFF;
+                    /* 對話框背景色 */
+                    background-repeat: no-repeat;
+                    background-position-y: center;
+                    /* 頭像位置-Y（預設在中間） */
+                    background-position-x: right;
+                    /* 頭像位置-X（預設在右方） */
+                    border: 2px solid #000;
+                    /* 框線 */
+                    border-radius: 7px;
+                    /* 框線圓角 */
+                    white-space: normal;
+                    word-spacing: normal;
+                }
+
+                #timeline_cnt .block_cnt::after,
+                #timeline_cnt .block_cnt>.plurk.display .td_img::after {
+                    position: fixed;
+                    width: auto;
+                    /* 對話框寬度，預設auto */
+                    height: auto;
+                    /* 對話框高度，預設auto */
+                    min-width: 150px;
+                    min-height: 280px;
+                    max-width: 25rem;
+                    padding: 10px;
+                    padding-right: 60px;
+                    /* 預留空白給方邊頭像 */
+                    background-color: none;
+                    /* 對話框背景色 */
+                    background-repeat: no-repeat;
+                    background-position-y: center;
+                    /* 頭像位置-Y（預設在中間） */
+                    background-position-x: right;
+                    /* 頭像位置-X（預設在右方） */
+
+                    white-space: normal;
+                    word-spacing: normal;
+                }
+
+                #timeline_cnt .block_cnt::before,
+                #timeline_cnt .block_cnt>.plurk.display .td_img::before {
+                    right: 0px;
+                    /* 第一個對話框的位置（預設在右方） */
+                    bottom: 0px;
+                    /* 第一個對話框的位置（預設在下方，預留55px空白） */
+                }
+
+                #timeline_cnt .block_cnt::after,
+                #timeline_cnt .block_cnt>.plurk.display .td_img::after {
+                    right: 200px;
+                    /* 第二個對話框的位置（預設在右方） */
+                    bottom: 0px;
+                    /* 第二個對話框的位置（預設在下方，預留5px空白） */
+                }
+
+                /****** 預設：無對話狀態，只有頭像 ******/
+                #timeline_cnt .block_cnt::before {
+                    padding: 10px;
+                    background-image: url('https://images.plurk.com/5I0l4nvZk23PJnJggI3fLc.png');
+                    content: ' ';
+                }
+
+                #timeline_cnt .block_cnt::after {
+
+                    padding: 10px;
+                    background-image: url('https://em.png');
+                    content: ' ';
+                }
+
+                /****** 一般噗：噗首顯示狀態 ******/
+                #timeline_cnt .block_cnt>.plurk.display .td_img::before {
+                    background-image: url('https://images.plurk.com/68MfpukDU7PNz9ZHDxmSWW.png');
+                    content: ' ';
+                    word-spacing: 100vw;
+                    width: 200px;
+                }
+
+                #timeline_cnt .block_cnt>.plurk.display .td_img::after {
+                    background-image: url('h766c4_w48_h48.png');
+                    content: '這是一個普通的噗。 第二行了..~..';
+                    word-spacing: 100vw;
+                    writing-mode: vertical-rl;
+                    /* 垂直書寫模式，從右到左 */
+                    text-orientation: upright;
+                    /* 文字直立顯示 */
+                    white-space: pre-wrap;
+                    /* 保留空白符號並換行 */
+                    height: 20px;
+                    background-color: #FFF;
+                    /* 對話框背景色 */
+                    border: 2px solid #000;
+                    /* 框線 */
+                    border-radius: 7px;
+                    /* 框線圓角 */
+                }
+
+                /* 一般噗：噗首展開狀態 */
+                #timeline_cnt .block_cnt>.plurk.display.plurk_box .td_img::before {
+                    background-image: url('httpspng');
+                }
+
+                #timeline_cnt .block_cnt>.plurk.display.plurk_box .td_img::after {
+                    background-image: url('httng');
+                    content: '時間很寶貴，不要隨便浪費喔。';
+                }
+
+                /****** 自己的噗：噗首顯示狀態 ******/
+                #timeline_cnt .block_cnt>.plurk[data-uid='YOUR_UID'].display .td_img::before {
+                    background-image: url('htpng');
+                }
+
+                #timeline_cnt .block_cnt>.plurk[data-uid='YOUR_UID'].display .td_img::after {
+                    background-image: url('ht.png');
+                    content: '（嚼嚼）';
+                }
+
+                /* 自己的噗：噗首展開狀態 */
+                #timeline_cnt .block_cnt>.plurk[data-uid='YOUR_UID'].display.plurk_box .td_img::before {
+                    background-image: url('http8.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk[data-uid='YOUR_UID'].display.plurk_box .td_img::after {
+                    background-image: url('httg');
+                    content: '（舔舔）';
+                }
+
+                /****** 置頂噗：噗首顯示狀態 ******/
+                #timeline_cnt .block_cnt>.plurk.pinned.display .td_img::before {
+                    background-image: url('https://emos.plurk.com/6ad682c171d5255e770bd08f9f3beb35_w48_h48.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk.pinned.display .td_img::after {
+                    background-image: url('https://emos.plurk.com/1bb1d342a741ee2eb456f616b02e51e6_w48_h48.png');
+                    content: '';
+                }
+
+                /* 置頂噗：噗首展開狀態 */
+                #timeline_cnt .block_cnt>.plurk.pinned.display.plurk_box .td_img::before {
+                    background-image: url('https://emos.plurk.com/466837570176b2c24bc238be3a0c061a_w48_h48.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk.pinned.display.plurk_box .td_img::after {
+                    background-image: url('https://emos.plurk.com/b4ceb1b723f5a5856354b9a1f94766c4_w48_h48.png');
+                    content: '';
+                }
+
+                /****** 偷偷說噗：噗首顯示狀態 ******/
+                #timeline_cnt .block_cnt>.plurk[data-uid='99999'].display .td_img::before {
+                    background-image: url('https://emos.plurk.com/42bb12ed8c29a1dffcc00e6ddcef0ce6_w48_h48.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk[data-uid='99999'].display .td_img::after {
+                    background-image: url('https://emos.plurk.com/f1ab1a2bcf61f5db48b4e4c411b6f094_w48_h48.png');
+                    content: '狐才不在裡面喔！';
+                }
+
+                /* 偷偷說噗：噗首展開狀態 */
+                #timeline_cnt .block_cnt>.plurk[data-uid='99999'].display.plurk_box .td_img::before {
+                    background-image: url('https://emos.plurk.com/362648ae2a2db332998ae307bc9c3813_w48_h48.gif');
+                }
+
+                #timeline_cnt .block_cnt>.plurk[data-uid='99999'].display.plurk_box .td_img::after {
+                    background-image: url('https://emos.plurk.com/ea8463a051593ce1001b5c322723bff4_w48_h48.png');
+                    content: '……';
+                }
+
+                /****** 隨機噗－ID尾數是7即會顯示：噗首顯示狀態 ******/
+                #timeline_cnt .block_cnt>.plurk[data-pid$='3'].display .td_img::before {
+                    background-image: url('https://emos.plurk.com/68bc9c642438f62b1baf91be138c65ac_w48_h48.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk[data-pid$='3'].display .td_img::after {
+                    background-image: url('https://emos.plurk.com/c224f2af84a393befee80edf5535ead0_w48_h48.png');
+                    content: '會發生什麼事呢？';
+                }
+
+                /* 隨機噗－ID尾數是7即會顯示：噗首展開狀態 */
+                #timeline_cnt .block_cnt>.plurk[data-pid$='3'].display.plurk_box .td_img::before {
+                    background-image: url('https://emos.plurk.com/35d2b0a574701708b9caa183ae496fd9_w48_h48.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk[data-pid$='3'].display.plurk_box .td_img::after {
+                    background-image: url('https://emos.plurk.com/dcbce04477006672e054914c03fdbe0d_w48_h48.png');
+                    content: '嗷嗷！';
+                }
+
+                /****** [v1.1新增] 根據tag（聖誕樹）顯示：噗首顯示狀態 ******/
+                #timeline_cnt .block_cnt>.plurk.display:has(.hashtag[href$='聖誕樹']) .td_img::before {
+                    background-image: url('https://emos.plurk.com/8b99f6116fbe6a8ff5c3b3b46851f3f4_w30_h37.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk.display:has(.hashtag[href$='聖誕樹']) .td_img::after {
+                    background-image: url('https://emos.plurk.com/d1f1209df56491e3285b58117b32f37c_w30_h37.png');
+                    content: '裡面有什麼禮物呢？';
+                }
+
+                /* [v1.1新增] 根據tag（聖誕樹）顯示：噗首展開狀態 */
+                #timeline_cnt .block_cnt>.plurk.display.plurk_box:has(.hashtag[href$='聖誕樹']) .td_img::before {
+                    background-image: url('https://emos.plurk.com/a884d0e4c1493582de5b6bfb1a1f3254_w40_h40.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk.display.plurk_box:has(.hashtag[href$='聖誕樹']) .td_img::after {
+                    background-image: url('https://emos.plurk.com/a8df52541e33e68eedb3722e52360aa7_w40_h40.png');
+                    content: '我收到好多好多禮物喔！';
+                }
+
+
+                /****** [v1.1新增] 根據tag（聖誕樹）顯示：噗首顯示狀態 ******/
+                #timeline_cnt .block_cnt>.plurk.display:has(.hashtag[href$='聖誕樹']) .td_img::before {
+                    background-image: url('https://emos.plurk.com/8b99f6116fbe6a8ff5c3b3b46851f3f4_w30_h37.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk.display:has(.hashtag[href$='聖誕樹']) .td_img::after {
+                    background-image: url('https://emos.plurk.com/d1f1209df56491e3285b58117b32f37c_w30_h37.png');
+                    content: '裡面有什麼禮物呢？';
+                }
+
+                /* [v1.1新增] 根據tag（聖誕樹）顯示：噗首展開狀態 */
+                #timeline_cnt .block_cnt>.plurk.display.plurk_box:has(.hashtag[href$='聖誕樹']) .td_img::before {
+                    background-image: url('https://emos.plurk.com/a884d0e4c1493582de5b6bfb1a1f3254_w40_h40.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk.display.plurk_box:has(.hashtag[href$='聖誕樹']) .td_img::after {
+                    background-image: url('https://emos.plurk.com/a8df52541e33e68eedb3722e52360aa7_w40_h40.png');
+                    content: '我收到好多好多禮物喔！';
+                }
+
+                /****** [v1.1新增] 根據複合tag（聖誕樹 + 新世界狂歡）顯示：噗首顯示狀態 ******/
+                #timeline_cnt .block_cnt>.plurk.display:has(.hashtag[href$='聖誕樹']):has(.hashtag[href$='新世界狂歡']) .td_img::before {
+                    background-image: url('https://emos.plurk.com/8b99f6116fbe6a8ff5c3b3b46851f3f4_w30_h37.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk.display:has(.hashtag[href$='聖誕樹']):has(.hashtag[href$='新世界狂歡']) .td_img::after {
+                    background-image: url('https://emos.plurk.com/d1f1209df56491e3285b58117b32f37c_w30_h37.png');
+                    content: '這次還包含新世界狂歡呢！';
+                }
+
+                /* [v1.1新增] 根據複合tag（聖誕樹 + 新世界狂歡）顯示：噗首展開狀態 */
+                #timeline_cnt .block_cnt>.plurk.display.plurk_box:has(.hashtag[href$='聖誕樹']):has(.hashtag[href$='新世界狂歡']) .td_img::before {
+                    background-image: url('https://emos.plurk.com/a884d0e4c1493582de5b6bfb1a1f3254_w40_h40.png');
+                }
+
+                #timeline_cnt .block_cnt>.plurk.display.plurk_box:has(.hashtag[href$='聖誕樹']):has(.hashtag[href$='新世界狂歡']) .td_img::after {
+                    background-image: url('https://emos.plurk.com/a8df52541e33e68eedb3722e52360aa7_w40_h40.png');
+                    content: '玩遊戲也要開心喔！';
+                }

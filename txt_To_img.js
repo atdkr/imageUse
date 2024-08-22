@@ -5,7 +5,8 @@ const path = require("path");
 // npm install text2png
 const text2png = require('text2png');
 // const sharp = require('sharp');
-
+const { createCanvas, registerFont } = require('canvas');
+// npm install canvas
 
 const outputDir = path.join(__dirname, 'random_Img');
 if (!fs.existsSync(outputDir)) {
@@ -18,19 +19,24 @@ if (!fs.existsSync(outputDir)) {
 // 讀取 input.txt 檔案
 const inputText = fs.readFileSync('input.txt', 'utf8');
 
-// 將每一行文字分割成陣列
+// 用換行讀取記事本
 const lines = inputText.split('\n');
+// 註冊字體
+registerFont('C:\\_imageUse\\Cubic_11.ttf', { family: 'Cubic' });
 
-// 設定圖片生成的選項
+// 設定圖片
+// stroke=文字邊框
 const options = {
-    font: '12px 微軟中黑體',
+    font: '20pt Iansui',
     color: 'black',
     lineSpacing: 0,
     padding: 20,
     borderWidth: 1,
     borderColor: 'white',
     textAlign: 'center',
-    width: 500
+    strokeWidth: 0.2,
+    strokeColor: 'white',
+    width: 100
 };
 
 // 生成每一行文字的圖片
